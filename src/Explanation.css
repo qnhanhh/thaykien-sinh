@@ -1,64 +1,64 @@
 .explain-container {
-    background: linear-gradient(180deg, #4FBFA5, #007271);
-    padding: 4rem 0 10rem;
-    margin: 0;
+  background: linear-gradient(180deg, #4fbfa5, #007271);
+  padding: 4rem 0 10rem;
+  margin: 0;
 }
 
 .explain-title {
-    font-family: "Paytone One", sans-serif;
-    color: #fff;
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin: 0 0 2rem;
+  font-family: "Paytone One", sans-serif;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
 }
 
 .explain-subtitle {
-    font-family: "Paytone One", sans-serif;
-    color: #fff;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.2;
-    font-weight: 400;
-    margin: 0;
+  font-family: "Paytone One", sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0;
 }
 
 .explain-desc {
-    width: 55vw;
-    margin: 2.5rem auto;
-    display: flex;
-    align-items: flex-start;
+  width: 55vw;
+  margin: 2.5rem auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 .explain-icon {
-    width: 7rem;
+  width: 7rem;
 }
 
 .explain-text .title,
 .explain-text .title span {
-    font-family: "Barlow Condensed", sans-serif;
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1.4;
-    margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.4;
+  margin: 0;
 }
 
-.explain-text .title span{
-    font-weight: 400;
+.explain-text .title span {
+  font-weight: 400;
 }
 
 .explain-text .paragraph {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 1.6rem;
-    text-align: justify;
-    line-height: 1.6;
-    margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
 }

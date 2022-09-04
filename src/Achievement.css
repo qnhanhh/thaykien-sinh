@@ -31,8 +31,8 @@
   transition: all 0.3s linear;
 }
 
-.achievement-item:hover{
-    transform: scale(1.1);
+.achievement-item:hover {
+  transform: scale(1.1);
 }
 
 .achievement-img {

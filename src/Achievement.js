@@ -18,7 +18,7 @@ const Achievement = () => {
                 </li>
                 <li className='achievement-item'>
                     <div className='achievement-img img-3'></div>
-                    <h6 className='achievement-title'>Vinh Danh &amp; Tặng Quà <br/> Học Sinh Đạt Điểm Cao</h6>
+                    <h6 className='achievement-title'>Vinh Danh &amp; Tặng Quà <br /> Học Sinh Đạt Điểm Cao</h6>
                     <p className='achievement-desc'>Năm 2021, số học sinh 2K3 đạt điểm 10 môn Sinh: 33 em, và hơn 200 em điểm từ 9 trở lên</p>
                 </li>
             </ul>

@@ -1,15 +1,15 @@
 import './Registration.css'
 import RegisterForm from './RegisterForm'
 
-const Registration=()=>{
-    return(
+const Registration = () => {
+    return (
         <div className='regist-container'>
             <div id='registration'></div>
             <div className='regist-desc'>
-                <h3 className='regist-title'>đăng ký tư vấn <br/> khóa học</h3>
+                <h3 className='regist-title'>đăng ký tư vấn <br /> khóa học</h3>
                 <h3 className='regist-subtitle'>full khóa luyện thi THPTQG môn SINH - học tới lúc thi</h3>
                 <ul className='regist-list'>
-                    <li className='regist-item'>Lộ trình học tập đi từ ĐƠN GIẢN, NGẮN GỌN, DỄ NHỚ đến <br/> HIỂU SÂU &amp; LUYỆN KỸ với tiêu chí "NẮM CHẮC 8+".</li>
+                    <li className='regist-item'>Lộ trình học tập đi từ ĐƠN GIẢN, NGẮN GỌN, DỄ NHỚ đến <br /> HIỂU SÂU &amp; LUYỆN KỸ với tiêu chí "NẮM CHẮC 8+".</li>
                     <li className='regist-item'>Rèn luyện kỹ năng xử lý nhanh, phân bổ thời gian hiệu quả.</li>
                     <li className='regist-item'>Chiến lược tăng tốc, bứt phá 8, 9 điểm.</li>
                 </ul>
@@ -38,7 +38,7 @@ const Registration=()=>{
                     </div>
                 </div>
             </div>
-            <RegisterForm/>
+            <RegisterForm />
         </div>
     )
 }
