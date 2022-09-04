@@ -1,0 +1,93 @@
+.banner-container {
+  background: linear-gradient(180deg, #007271, #4fbfa5);
+  color: #fff;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.banner-background h3 {
+  margin: 0;
+}
+
+.banner-logo {
+  width: 30vw;
+  height: 10rem;
+  background-color: #fff;
+  margin: auto;
+}
+
+.banner-body {
+  width: 55vw;
+  margin: 13rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.banner-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.banner-title {
+  font-family: "Paytone One", sans-serif;
+  font-size: 2.6rem;
+  line-height: 2.5;
+  font-weight: bold;
+  text-shadow: rgb(0, 0, 0) 1px 2px 3px;
+}
+
+.banner-subtitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.9rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-shadow: rgb(78, 78, 78) 1px 2px;
+}
+
+.banner-list h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.banner-list h3::before {
+  content: "- ";
+}
+
+.banner-photo {
+  flex: 1;
+  background-color: #fff;
+  position: relative;
+}
+
+.banner-photo img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 130%;
+}
+
+.banner-register {
+  width: 55vw;
+  margin: 3.5rem auto 0;
+}
+
+.banner-link {
+  font-size: 2rem;
+  padding: 1.5rem 4.5rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #ff3200, #ff6800);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+
+  
+  

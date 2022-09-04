@@ -1,0 +1,10 @@
+.pathway-container {
+  background: linear-gradient(180deg, #007271, #4fbfa5);
+  padding-bottom: 10rem;
+}
+
+.explain-desc {
+  width: 55vw;
+  height: 45rem;
+  background-color: #fff;
+}

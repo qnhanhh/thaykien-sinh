@@ -1,0 +1,117 @@
+.regist-container {
+  width: 70vw;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem auto;
+  position: relative;
+}
+
+#registration {
+  position: absolute;
+  top: -50%;
+}
+
+.regist-desc {
+  text-align: justify !important;
+  padding: 0 1rem;
+}
+
+.regist-title {
+  color: rgb(0, 114, 113);
+  font-family: "Paytone One", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.regist-subtitle {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+.regist-list {
+  text-align: center;
+  list-style-type: circle;
+  width: fit-content;
+  margin: 0 auto 30px;
+}
+
+.regist-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-family: "Barlow Condensed", sans-serif;
+  width: fit-content;
+}
+
+.regist-noti {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.regist-noti .timer {
+  flex: 1;
+  border: 2px solid rgb(0, 114, 113);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 10px 20px;
+}
+
+.regist-noti .timer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.regist-noti .timer-count {
+  color: rgb(36, 36, 36);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.regist-noti .timer-title {
+  text-align: center;
+  color: rgb(36, 36, 36);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+
+.regist-noti .price {
+  flex: 1;
+  border: 2px solid rgb(242, 67, 13);
+  padding: 10px 20px;
+}
+
+.regist-noti .old-price {
+  text-decoration: line-through;
+  color: rgb(36, 36, 36);
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.regist-noti .new-price {
+  color: rgb(244, 64, 37);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}

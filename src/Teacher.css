@@ -1,0 +1,52 @@
+.teacher-container{
+    background: linear-gradient(180deg, #4FBFA5, #007271);
+    padding-bottom: 10rem;
+}
+
+.teacher-wrapper{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 70vw;
+    margin: auto;
+}
+
+.teacher-photo{
+    width: 40%;
+    padding-top: 50%;
+    border: 14px solid #fff;
+    background: url('https://w.ladicdn.com/s750x800/6121eaeb1b6cbb00134b5e8d/z3214312322855_457d52a698f11df48293c804526035d0-20220310092959.jpg') top center /cover;
+}
+
+.teacher-desc{
+    flex: 1;
+}
+
+.teacher-text{
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.teacher-statistic{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-statistic~.teacher-statistic{
+    margin-top: 5rem;
+}
+
+.teacher-statistic img{
+    background-color: #fff;
+    width: 45%;
+    height: 13rem;
+    box-shadow: 0px 15px 20px -15px #000;
+    border-radius: 32px;
+}

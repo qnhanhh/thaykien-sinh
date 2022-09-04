@@ -1,0 +1,61 @@
+.register-form {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 114, 113, 1),
+    rgba(79, 191, 165, 1)
+  );
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.register-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#form1 {
+  line-height: 1.6;
+}
+
+#form1 input {
+  width: 80%;
+  font-size: 1.4rem;
+  border: 1px solid rgb(10, 103, 233);
+  padding: 8px;
+  margin: 4px;
+}
+
+#form1 input:focus {
+  outline: none;
+}
+
+.register-box {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto 0.8rem;
+}
+
+.register-box input {
+  width: unset !important;
+  cursor: pointer;
+}
+
+.register-box label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register-submit {
+  border-radius: 18px;
+  line-height: 1.8;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(180deg, #ff3200, #ff6800);
+  border: none !important;
+  cursor: pointer;
+}
