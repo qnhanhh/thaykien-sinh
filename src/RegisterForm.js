@@ -22,26 +22,26 @@ const RegisterForm = () => {
         <div className='register-form'>
             <h3 className='register-title'>Em để lại thông tin để thầy tư vấn cụ thể nội dung khóa học nhé!</h3>
             <iframe name='hiddenConfirm' id='hiddenConfirm'></iframe>
-            <form target='hiddenConfirm' id='form1' action='' method='post'>
-                <input type='text' placeholder='Họ tên'></input><br />
-                <input type='email' placeholder='Email'></input><br />
-                <input type='text' placeholder='Số điện thoại'></input><br />
-                <input type='text' placeholder='Địa chỉ'></input><br />
-                <input type='text' placeholder='Link Facebook'></input><br />
+            <form target='hiddenConfirm' id='form1' action='https://docs.google.com/forms/d/e/1FAIpQLSelVplKesQOZ0qHvCoK6ss-izBItW4LWLgLuxwM2VMaN3GttA/formResponse' method='post'>
+                <input name='entry.1647948063' type='text' placeholder='Họ tên'></input><br />
+                <input name='entry.268604474' type='email' placeholder='Email'></input><br />
+                <input name='entry.1718464397' type='text' placeholder='Số điện thoại'></input><br />
+                <input name='entry.539794579' type='text' placeholder='Địa chỉ'></input><br />
+                <input name='entry.195125974' type='text' placeholder='Link Facebook'></input><br />
                 <div className='register-box'>
-                    <input type='checkbox' id='Full Khóa Học' name='Full Khóa Học'></input>
+                    <input name='entry.657393504' type='checkbox' id='Full Khóa Học' name='Full Khóa Học'></input>
                     <label htmlFor='Full Khóa Học'>Full Khóa Học</label><br />
-                    <input type='checkbox' id='Khóa Chuyên Đề' name='Khóa Chuyên Đề'></input>
+                    <input name='entry.657393504' type='checkbox' id='Khóa Chuyên Đề' name='Khóa Chuyên Đề'></input>
                     <label htmlFor='Khóa Chuyên Đề'>Khóa Chuyên Đề</label><br />
-                    <input type='checkbox' id='Khóa Luyện Đề' name='Khóa Luyện Đề'></input>
+                    <input name='entry.657393504' type='checkbox' id='Khóa Luyện Đề' name='Khóa Luyện Đề'></input>
                     <label htmlFor='Khóa Luyện Đề'>Khóa Luyện Đề</label><br />
-                    <input type='checkbox' id='Khóa Tổng Ôn Thực Chiến' name='Khóa Tổng Ôn Thực Chiến'></input>
+                    <input name='entry.657393504' type='checkbox' id='Khóa Tổng Ôn Thực Chiến' name='Khóa Tổng Ôn Thực Chiến'></input>
                     <label htmlFor='Khóa Tổng Ôn Thực Chiến'>Khóa Tổng Ôn Thực Chiến</label><br />
-                    <input type='checkbox' id='Bộ Sách Phác Đồ Sinh' name='Bộ Sách Phác Đồ Sinh'></input>
+                    <input name='entry.657393504' type='checkbox' id='Bộ Sách Phác Đồ Sinh' name='Bộ Sách Phác Đồ Sinh'></input>
                     <label htmlFor='Bộ Sách Phác Đồ Sinh'>Bộ Sách Phác Đồ Sinh</label><br />
                 </div>
                 <button className='button' id='submitBtn' onClick={(event) => HandleSubmit(event)}>
-                    <span>Submit</span>
+                    <span>Gửi thông tin</span>
                     <svg viewBox="0 0 15 13">
                         <polyline points="2 6.5 6 10.5 13 2.5"></polyline>
                     </svg>
