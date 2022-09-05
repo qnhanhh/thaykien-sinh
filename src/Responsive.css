@@ -53,7 +53,8 @@
   .teacher-wrapper,
   .achievement-list,
   .tuition-list,
-  .tuition-item {
+  .tuition-item,
+  .pathway-desc {
     display: block !important;
     width: 90vw !important;
   }

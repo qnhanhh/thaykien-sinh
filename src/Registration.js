@@ -1,7 +1,31 @@
+import Countdown from 'react-countdown'
 import './Registration.css'
 import RegisterForm from './RegisterForm'
 
 const Registration = () => {
+    const renderer = ({ days, hours, minutes, seconds }) => {
+        return (
+            <div className='timer'>
+                <div className='timer-div'>
+                    <span className='timer-count'>{days}</span>
+                    <h3 className='timer-title'>Days</h3>
+                </div>
+                <div className='timer-div'>
+                    <span className='timer-count'>{hours}</span>
+                    <h3 className='timer-title'>Hours</h3>
+                </div>
+                <div className='timer-div'>
+                    <span className='timer-count'>{minutes}</span>
+                    <h3 className='timer-title'>Min</h3>
+                </div>
+                <div className='timer-div'>
+                    <span className='timer-count'>{seconds}</span>
+                    <h3 className='timer-title'>Sec</h3>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className='regist-container'>
             <div id='registration'></div>
@@ -14,24 +38,7 @@ const Registration = () => {
                     <li className='regist-item'>Chiến lược tăng tốc, bứt phá 8, 9 điểm.</li>
                 </ul>
                 <div className='regist-noti'>
-                    <div className='timer'>
-                        <div className='timer-div'>
-                            <span className='timer-count'>00</span>
-                            <h3 className='timer-title'>Days</h3>
-                        </div>
-                        <div className='timer-div'>
-                            <span className='timer-count'>00</span>
-                            <h3 className='timer-title'>Hours</h3>
-                        </div>
-                        <div className='timer-div'>
-                            <span className='timer-count'>00</span>
-                            <h3 className='timer-title'>Min</h3>
-                        </div>
-                        <div className='timer-div'>
-                            <span className='timer-count'>00</span>
-                            <h3 className='timer-title'>Sec</h3>
-                        </div>
-                    </div>
+                    <Countdown date={Date.now() + 50000} renderer={renderer} />
                     <div className='price'>
                         <h3 className='old-price'>5.000.000</h3>
                         <h3 className='new-price'>2.500.000</h3>
