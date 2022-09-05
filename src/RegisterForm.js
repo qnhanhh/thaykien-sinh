@@ -2,20 +2,50 @@ import './RegisterForm.css'
 
 const RegisterForm = () => {
     function HandleSubmit(event) {
-        const submitForm=document.getElementById('form1')
-        const submitBtn = document.querySelector('#submitBtn')
-        submitBtn.classList.add('processing')
-        submitForm.submit()
+        event.preventDefault()
+        const title = 'Warning'
+        const message = 'Please fill in these fields'
+        const duration = 3000
+        const main = document.querySelector('.register-form');
 
-        const restartBtn = document.querySelector('.restart')
-        setTimeout(() => {
-            restartBtn.style.display = 'block'
-        }, 4000)
-        restartBtn.addEventListener('click', e => {
-            submitBtn.classList.remove('processing')
-            e.preventDefault()
-            restartBtn.style.display = 'none'
+        const submitBtn = document.querySelector('#submitBtn')
+        let isValid = false
+        const submitForm = document.getElementById('form1')
+        const inputs = document.querySelectorAll('input[required]')
+        inputs.forEach(item => {
+            if (!item.value) {
+                isValid = false
+                const toast = document.createElement('div');
+
+                const delay = (duration / 1000).toFixed(2);
+
+                toast.classList.add('toast');
+                toast.style.animation = `slideRtoL ease .3s, fadeOut linear 1s ${delay}s forwards`;
+                toast.innerHTML = `
+                <div class="toast__body">
+                    <h3 class="toast__title">${title}</h3>
+                    <p class="toast__msg">${message}</p>
+                </div>
+                `;
+                main.appendChild(toast);
+            } else {
+                isValid = true
+            }
         })
+        if (isValid) {
+            submitBtn.classList.add('processing')
+            submitForm.submit()
+            const restartBtn = document.querySelector('.restart')
+            setTimeout(() => {
+                restartBtn.style.display = 'block'
+            }, 4000)
+            restartBtn.addEventListener('click', e => {
+                submitBtn.classList.remove('processing')
+                e.preventDefault()
+                restartBtn.style.display = 'none'
+                submitForm.reset()
+            })
+        }
     }
 
     return (
@@ -23,21 +53,21 @@ const RegisterForm = () => {
             <h3 className='register-title'>Em để lại thông tin để thầy tư vấn cụ thể nội dung khóa học nhé!</h3>
             <iframe name='hiddenConfirm' id='hiddenConfirm'></iframe>
             <form target='hiddenConfirm' id='form1' action='https://docs.google.com/forms/d/e/1FAIpQLSelVplKesQOZ0qHvCoK6ss-izBItW4LWLgLuxwM2VMaN3GttA/formResponse' method='post'>
-                <input name='entry.1647948063' type='text' placeholder='Họ tên'></input><br />
-                <input name='entry.268604474' type='email' placeholder='Email'></input><br />
-                <input name='entry.1718464397' type='text' placeholder='Số điện thoại'></input><br />
+                <input name='entry.1647948063' type='text' placeholder='Họ tên' required /><br />
+                <input name='entry.268604474' type='email' placeholder='Email' required /><br />
+                <input name='entry.1718464397' type='text' placeholder='Số điện thoại' required /><br />
                 <input name='entry.539794579' type='text' placeholder='Địa chỉ'></input><br />
-                <input name='entry.195125974' type='text' placeholder='Link Facebook'></input><br />
+                <input name='entry.195125974' type='text' placeholder='Link Facebook' required /><br />
                 <div className='register-box'>
-                    <input name='entry.657393504' type='checkbox' id='Full Khóa Học' name='Full Khóa Học'></input>
+                    <input name='entry.657393504' type='checkbox' value='Full Khóa Học' id='Full Khóa Học'></input>
                     <label htmlFor='Full Khóa Học'>Full Khóa Học</label><br />
-                    <input name='entry.657393504' type='checkbox' id='Khóa Chuyên Đề' name='Khóa Chuyên Đề'></input>
+                    <input name='entry.998344326' type='checkbox' value='Khóa Chuyên Đề' id='Khóa Chuyên Đề'></input>
                     <label htmlFor='Khóa Chuyên Đề'>Khóa Chuyên Đề</label><br />
-                    <input name='entry.657393504' type='checkbox' id='Khóa Luyện Đề' name='Khóa Luyện Đề'></input>
+                    <input name='entry.1110302314' type='checkbox' value='Khóa Luyện Đề' id='Khóa Luyện Đề'></input>
                     <label htmlFor='Khóa Luyện Đề'>Khóa Luyện Đề</label><br />
-                    <input name='entry.657393504' type='checkbox' id='Khóa Tổng Ôn Thực Chiến' name='Khóa Tổng Ôn Thực Chiến'></input>
+                    <input name='entry.1993947337' type='checkbox' value='Khóa Tổng Ôn Thực Chiến' id='Khóa Tổng Ôn Thực Chiến'></input>
                     <label htmlFor='Khóa Tổng Ôn Thực Chiến'>Khóa Tổng Ôn Thực Chiến</label><br />
-                    <input name='entry.657393504' type='checkbox' id='Bộ Sách Phác Đồ Sinh' name='Bộ Sách Phác Đồ Sinh'></input>
+                    <input name='entry.992199181' type='checkbox' value='Bộ Sách Phác Đồ Sinh' id='Bộ Sách Phác Đồ Sinh'></input>
                     <label htmlFor='Bộ Sách Phác Đồ Sinh'>Bộ Sách Phác Đồ Sinh</label><br />
                 </div>
                 <button className='button' id='submitBtn' onClick={(event) => HandleSubmit(event)}>
