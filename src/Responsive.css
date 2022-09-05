@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .banner-body,
   .banner-register,
   .regist-container,
@@ -83,5 +83,22 @@
   .achievement-item {
     width: 90% !important;
     margin: 0 auto 3rem;
+  }
+}
+
+@media (max-width:567px){
+  .regist-container,
+  .achievement-list,
+  .achievement-item{
+   width: 100vw !important;
+  }
+  .regist-noti{
+    margin: auto;
+  }
+  .regist-item{
+    padding-left: 0;
+  }
+  .register-form{
+    padding: 2rem;
   }
 }

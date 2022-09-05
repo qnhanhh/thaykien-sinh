@@ -38,7 +38,7 @@ const Registration = () => {
                     <li className='regist-item'>Chiến lược tăng tốc, bứt phá 8, 9 điểm.</li>
                 </ul>
                 <div className='regist-noti'>
-                    <Countdown date={Date.now() + 50000} renderer={renderer} />
+                    <Countdown date={Date.now() + 500000} renderer={renderer} />
                     <div className='price'>
                         <h3 className='old-price'>5.000.000</h3>
                         <h3 className='new-price'>2.500.000</h3>
