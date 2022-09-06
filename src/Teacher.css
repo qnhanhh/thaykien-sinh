@@ -1,5 +1,5 @@
 .teacher-container {
-  background: linear-gradient(180deg, #4fbfa5, #007271);
+  background: var(--background-reverse);
   padding-bottom: 10rem;
 }
 
@@ -15,7 +15,7 @@
 .teacher-photo {
   width: 40%;
   padding-top: 50%;
-  border: 14px solid #fff;
+  border: 14px solid var(--white-color);
   background: url("https://w.ladicdn.com/s750x800/6121eaeb1b6cbb00134b5e8d/z3214312322855_457d52a698f11df48293c804526035d0-20220310092959.jpg")
     top center / cover;
 }
@@ -25,8 +25,8 @@
 }
 
 .teacher-text {
-  font-family: "Barlow Condensed", sans-serif;
-  color: #fff;
+  font-family: var(--barlow-font);
+  color: var(--white-color);
   font-size: 1.9rem;
   font-weight: bold;
   text-align: justify;
@@ -45,9 +45,9 @@
 }
 
 .teacher-statistic img {
-  background-color: #fff;
+  background-color: var(--white-color);
   width: 45%;
   height: 13rem;
-  box-shadow: 0px 15px 20px -15px #000;
+  box-shadow: 0px 15px 20px -15px var(--black-color);
   border-radius: 32px;
 }

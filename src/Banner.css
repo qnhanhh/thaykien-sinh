@@ -1,6 +1,6 @@
 .banner-container {
-  background: linear-gradient(180deg, #007271, #4fbfa5);
-  color: #fff;
+  background: var(--background-color);
+  color: var(--white-color);
   padding-bottom: 30px;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
 .banner-logo {
   width: 30vw;
   height: 10rem;
-  background-color: #fff;
+  background-color: var(--white-color);
   margin: auto;
 }
 
@@ -31,15 +31,15 @@
 }
 
 .banner-title {
-  font-family: "Paytone One", sans-serif;
+  font-family: var(--paytone-font);
   font-size: 2.6rem;
   line-height: 2.5;
   font-weight: bold;
-  text-shadow: rgb(0, 0, 0) 1px 2px 3px;
+  text-shadow: var(--black-color) 1px 2px 3px;
 }
 
 .banner-subtitle {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--barlow-font);
   font-size: 4.9rem;
   font-weight: bold;
   line-height: 1.4;
@@ -47,7 +47,7 @@
 }
 
 .banner-list h3 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--barlow-font);
   font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.6;
@@ -59,7 +59,7 @@
 
 .banner-photo {
   flex: 1;
-  background-color: #fff;
+  background-color: var(--white-color);
   position: relative;
 }
 
@@ -79,27 +79,27 @@
 .banner-link {
   font-size: 2rem;
   padding: 1.5rem 4.5rem;
-  color: #fff;
+  color: var(--white-color);
   font-weight: bold;
   line-height: 1.6;
-  background: linear-gradient(180deg, #ff3200, #ff6800);
+  background: var(--primary-linear);
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 30px;
   animation: glowing 1000ms infinite;
 }
 
-@keyframes glowing{
+@keyframes glowing {
   0% {
-    background-color: rgb(255, 50, 0);
-    box-shadow: 0 0 5px rgb(255, 50, 0);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
   }
   50% {
-    background-color: rgba(255, 104, 0,0.5);
-    box-shadow: 0 0 20px rgba(255, 104, 0,0.5);
+    background-color: rgba(255, 104, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 104, 0, 0.5);
   }
   100% {
-    background-color: rgb(255, 104, 0);
-    box-shadow: 0 0 5px rgb(255, 104, 0);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
   }
 }

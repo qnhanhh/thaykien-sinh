@@ -1,9 +1,5 @@
 .register-form {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 114, 113, 1),
-    rgba(79, 191, 165, 1)
-  );
+  background: var(--background-color);
   padding: 2rem 4rem;
   border-radius: 10px;
   text-align: center;
@@ -11,7 +7,7 @@
 }
 
 .register-title {
-  color: #fff;
+  color: var(--white-color);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.4;
@@ -53,7 +49,7 @@
 .register-box label {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -61,18 +57,15 @@
   border-radius: 18px;
   line-height: 1.8;
   font-weight: bold;
-  color: #fff;
-  background: linear-gradient(180deg, #ff3200, #ff6800);
+  color: var(--white-color);
+  background: var(--primary-linear);
   border: none !important;
   cursor: pointer;
 }
 
 .button {
-  --color: #fff;
-  --background: linear-gradient(180deg, #ff3200, #ff6800);
   --height: 41px;
   --width: 100%;
-  --icon: #fff;
   padding: 1rem;
   cursor: pointer;
   text-align: center;
@@ -86,7 +79,7 @@
   letter-spacing: 1px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--color);
+  color: var(--white-color);
   line-height: 1.8;
 }
 .button:before {
@@ -99,7 +92,7 @@
   width: var(--before-w, var(--width));
   height: var(--before-h, var(--height));
   border-radius: var(--before-r, 7px);
-  background: var(--background);
+  background: var(--primary-linear);
   transform-origin: 50% 50%;
   transition: width 0.3s, height 0.3s, border-radius 0.2s;
   transition-delay: 0.2s;
@@ -120,7 +113,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  stroke: var(--icon);
+  stroke: var(--white-color);
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -194,7 +187,7 @@ html {
   border-radius: 2px;
   padding: 1rem 0;
   width: 50%;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
   transition: all linear 0.3s;

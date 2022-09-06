@@ -86,19 +86,19 @@
   }
 }
 
-@media (max-width:567px){
+@media (max-width: 567px) {
   .regist-container,
   .achievement-list,
-  .achievement-item{
-   width: 100vw !important;
+  .achievement-item {
+    width: 100vw !important;
   }
-  .regist-noti{
+  .regist-noti {
     margin: auto;
   }
-  .regist-item{
+  .regist-item {
     padding-left: 0;
   }
-  .register-form{
+  .register-form {
     padding: 2rem;
   }
 }

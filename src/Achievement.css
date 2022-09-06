@@ -1,11 +1,11 @@
 .achievement-container {
-  background: linear-gradient(180deg, #007271, #4fbfa5);
+  background: var(--background-color);
   padding-bottom: 10rem;
 }
 
 .achievement-text {
-  font-family: "Paytone One", sans-serif;
-  color: #fff;
+  font-family: var(--paytone-font);
+  color: var(--white-color);
   font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
@@ -24,7 +24,7 @@
 
 .achievement-item {
   width: 32%;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-radius: 21px;
   box-shadow: 0px 15px 20px -15px rgb(84 84 84);
   padding: 2rem;
@@ -56,7 +56,7 @@
 }
 
 .achievement-title {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--barlow-font);
   color: rgb(79, 191, 165);
   font-size: 2.2rem;
   font-weight: bold;
@@ -75,7 +75,7 @@
 }
 
 .achievement-desc {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--barlow-font);
   color: rgb(5, 34, 74);
   font-size: 1.6rem;
   text-align: center;

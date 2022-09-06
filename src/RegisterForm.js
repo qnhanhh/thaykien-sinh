@@ -3,8 +3,8 @@ import './RegisterForm.css'
 const RegisterForm = () => {
     function HandleSubmit(event) {
         event.preventDefault()
-        const title = 'Warning'
-        const message = 'Please fill in these fields'
+        const title = 'Úiii'
+        const message = 'Hãy điền số điện thoại và link Facebook trước khi gửi nha'
         const duration = 3000
         const main = document.querySelector('.register-form');
 
@@ -53,8 +53,8 @@ const RegisterForm = () => {
             <h3 className='register-title'>Em để lại thông tin để thầy tư vấn cụ thể nội dung khóa học nhé!</h3>
             <iframe name='hiddenConfirm' id='hiddenConfirm'></iframe>
             <form target='hiddenConfirm' id='form1' action='https://docs.google.com/forms/d/e/1FAIpQLSelVplKesQOZ0qHvCoK6ss-izBItW4LWLgLuxwM2VMaN3GttA/formResponse' method='post'>
-                <input name='entry.1647948063' type='text' placeholder='Họ tên' required /><br />
-                <input name='entry.268604474' type='email' placeholder='Email' required /><br />
+                <input name='entry.1647948063' type='text' placeholder='Họ tên' /><br />
+                <input name='entry.268604474' type='email' placeholder='Email' /><br />
                 <input name='entry.1718464397' type='text' placeholder='Số điện thoại' required /><br />
                 <input name='entry.539794579' type='text' placeholder='Địa chỉ'></input><br />
                 <input name='entry.195125974' type='text' placeholder='Link Facebook' required /><br />
