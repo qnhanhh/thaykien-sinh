@@ -65,9 +65,9 @@ const Navigator = () => {
             <div className="nav-container nav-slide-left" id="nav-container">
                 <nav className='nav-div'>
                     <ul className='nav-list'>
-                        <li className="nav-item slide-out-1"><a className='nav-link' href="/">Thông tin giáo viên</a></li>
-                        <li className="nav-item slide-out-2"><a className='nav-link' href="/">Lộ trình</a></li>
-                        <li className="nav-item slide-out-3"><a className='nav-link' href="/">Học phí</a></li>
+                        <li onClick={handleClick} className="nav-item slide-out-1"><a className='nav-link' href="#teacher">Thông tin giáo viên</a></li>
+                        <li onClick={handleClick} className="nav-item slide-out-2"><a className='nav-link' href="#pathway">Lộ trình</a></li>
+                        <li onClick={handleClick} className="nav-item slide-out-3"><a className='nav-link' href="#tuition">Học phí</a></li>
                     </ul>
                 </nav>
             </div>

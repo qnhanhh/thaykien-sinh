@@ -3,7 +3,7 @@ import './RegisterForm.css'
 const RegisterForm = () => {
     function HandleSubmit(event) {
         event.preventDefault()
-        const title = 'Úiii'
+        const title = 'Ối'
         const message = 'Hãy điền số điện thoại và link Facebook trước khi gửi nha'
         const duration = 3000
         const main = document.querySelector('.register-form');
@@ -28,6 +28,9 @@ const RegisterForm = () => {
                 </div>
                 `;
                 main.appendChild(toast);
+                setTimeout(()=>{
+                    main.removeChild(toast)
+                }, 4000)
             } else {
                 isValid = true
             }

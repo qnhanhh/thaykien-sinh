@@ -2,7 +2,7 @@ import './Explanation.css'
 
 const Explanation = () => {
     return (
-        <div className='explain-container'>
+        <div className='explain-container' id='pathway'>
             <h1 className='explain-title'>tại sao phải xuất phát sớm môn sinh</h1>
             <h6 className='explain-subtitle'>kiến thức thi thptqg môn sinh bao gồm cả kiến thức lớp 10 &amp; 11</h6>
             <div className='explain-desc'>

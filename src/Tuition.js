@@ -2,7 +2,7 @@ import './Tuition.css'
 
 const Tuition = () => {
     return (
-        <div className='tuition-container'>
+        <div className='tuition-container' id='tuition'>
             <h3 className='regist-title'>học phí &amp; ưu đãi</h3>
             <ul className='tuition-list'>
                 <li className='tuition-item'>

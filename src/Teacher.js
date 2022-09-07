@@ -2,7 +2,7 @@ import './Teacher.css'
 
 const Teacher = () => {
     return (
-        <div className='teacher-container'>
+        <div className='teacher-container' id='teacher'>
             <div className='teacher-wrapper'>
                 <div className='teacher-photo'></div>
                 <div className='teacher-desc'>
