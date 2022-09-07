@@ -5,18 +5,15 @@
   --navColor1: #21292c;
   --navColor2: #aa3e39;
   --navColor3: #aa6e39;
-  --navColor4: #236267;
-  --navColor5: #2c8437;
 }
 
 .nav-container {
   position: fixed;
   z-index: 9;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  transform: translateX(-100vw);
+  right: 0;
+  width: 50vw;
+  transform: translateX(100vw);
 }
 
 .nav-slide-right {
@@ -88,22 +85,6 @@
   background-color: var(--navColor3);
 }
 
-.nav-item:nth-of-type(4) {
-  background-color: var(--navColor4);
-}
-
-.nav-item:nth-of-type(5) {
-  background-color: var(--navColor5);
-}
-
-.nav-item:nth-of-type(6) {
-  background-color: var(--navColor1);
-}
-
-.nav-item:nth-of-type(7) {
-  background-color: var(--navColor2);
-}
-
 /* Slide in animation with delay for each */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
@@ -115,22 +96,6 @@
 
 .slide-in-3 {
   animation: slide-in 0.4s linear 0.6s both;
-}
-
-.slide-in-4 {
-  animation: slide-in 0.4s linear 0.8s both;
-}
-
-.slide-in-5 {
-  animation: slide-in 0.4s linear 1s both;
-}
-
-.slide-in-6 {
-  animation: slide-in 0.4s linear 1.2s both;
-}
-
-.slide-in-7 {
-  animation: slide-in 0.4s linear 1.4s both;
 }
 
 @keyframes slide-in {
@@ -156,22 +121,6 @@
 
 .slide-out-3 {
   animation: slide-out 0.3s linear 0.3s both;
-}
-
-.slide-out-4 {
-  animation: slide-out 0.3s linear 0.4s both;
-}
-
-.slide-out-5 {
-  animation: slide-out 0.3s linear 0.5s both;
-}
-
-.slide-out-6 {
-  animation: slide-out 0.3s linear 0.6s both;
-}
-
-.slide-out-7 {
-  animation: slide-out 0.3s linear 0.7s both;
 }
 
 @keyframes slide-out {
@@ -232,39 +181,17 @@
   background-color: #000;
   border-radius: 32px;
   padding: 0 3rem;
-  transform: translateY(-100%);
+  transform: translateY(-100vh);
 }
 
 .slide-down {
-  animation: slide-down 0.4s both;
+  transition: all 0.8s ease-in-out;
+  transform: translateY(0);
 }
 
 .slide-up {
-  animation: slide-up 0.4s both;
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-up {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
+  transition: all 0.8s ease-in-out;
+  transform: translateY(-100vh);
 }
 
 .mentor-container::-webkit-scrollbar-track
