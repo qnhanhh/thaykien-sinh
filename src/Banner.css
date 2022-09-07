@@ -86,20 +86,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 30px;
-  animation: glowing 1000ms infinite;
+  display: inline-block;
+  animation: glowing 2000ms infinite;
 }
 
-@keyframes glowing {
-  0% {
-    background-color: var(--primary-color);
-    box-shadow: 0 0 5px var(--primary-color);
-  }
-  50% {
-    background-color: rgba(255, 104, 0, 0.5);
-    box-shadow: 0 0 20px rgba(255, 104, 0, 0.5);
-  }
-  100% {
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 5px var(--secondary-color);
-  }
-}

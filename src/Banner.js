@@ -20,7 +20,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="banner-register">
-                    <a className='banner-link hvr-bounce-out' target='blank' href='https://www.facebook.com/HocSinhThayTruongCongKien'>Xem ngay</a>
+                    <a className='banner-link' target='blank' href='https://www.facebook.com/HocSinhThayTruongCongKien'>Xem ngay</a>
                 </div>
             </div>
         </div>

@@ -20,7 +20,7 @@ const Teacher = () => {
                 </div>
             </div>
             <div className="banner-register center-btn">
-                <a className='banner-link hvr-bounce-out' href='#registration'>Đăng ký ngay</a>
+                <a className='banner-link' href='#registration'>Đăng ký ngay</a>
             </div>
         </div>
     )
