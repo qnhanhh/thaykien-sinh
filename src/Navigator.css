@@ -142,6 +142,9 @@
   transition: 0.4s;
 }
 
+.change{
+  background-color: transparent;
+}
 /* Rotate first bar */
 .change .bar1 {
   transform: rotate(-45deg) translate(-7px, 8px);
