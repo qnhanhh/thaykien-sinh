@@ -84,6 +84,13 @@
     width: 90% !important;
     margin: 0 auto 3rem;
   }
+  .mentor-container{
+    width: 60vw;
+    max-height: 60vw;
+  }
+  .cursor{
+    display: none;
+  }
 }
 
 @media (max-width: 567px) {
