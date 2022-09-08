@@ -1,3 +1,4 @@
+import {motion} from 'framer-motion'
 import './Banner.css'
 
 const Banner = () => {
@@ -20,7 +21,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="banner-register">
-                    <a className='banner-link' target='blank' href='https://www.facebook.com/HocSinhThayTruongCongKien'>Xem ngay</a>
+                    <motion.a animate={{scale:[1,1.2,1]}} transition={{repeat:Infinity, duration:2}} className='banner-link' target='blank' href='https://www.facebook.com/HocSinhThayTruongCongKien'>Xem ngay</motion.a>
                 </div>
             </div>
         </div>

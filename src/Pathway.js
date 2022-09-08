@@ -1,3 +1,4 @@
+import {motion} from 'framer-motion'
 import './Pathway.css'
 
 const Pathway = () => {
@@ -8,7 +9,7 @@ const Pathway = () => {
             <div className='pathway-desc'>
             </div>
             <div className="banner-register center-btn">
-                <a className='banner-link' href='#registration'>Đăng ký ngay</a>
+                <motion.a animate={{scale:[1,1.2,1]}} transition={{repeat:Infinity, duration:2}} className='banner-link' href='#registration'>Đăng ký ngay</motion.a>
             </div>
         </div>
     )

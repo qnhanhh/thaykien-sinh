@@ -27,20 +27,21 @@ body {
   font-size: 62.5%;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-}
-
-@keyframes glowing {
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.2);
-  }
-  100%{
-    transform: scale(1);
-  }
+  cursor: none !important;
 }
 
 .center-btn {
   text-align: center;
+}
+
+.cursor{
+  background: url('https://media.cdnandroid.com/item_images/812144/imagen-real-time-q-a-qanda-0ori.jpg') top center /cover;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
